@@ -13,6 +13,10 @@ usb-modeswitch is a tool for controlling "multi-mode" USB devices, such as 3G/4G
 - Uses Homebrew for dependency management
 - Downloads and builds the latest usb-modeswitch release
 
+## Download precompiled application
+
+You can download a ready-to-use precompiled application from the "Releases" section on the project's GitHub page. This is the easiest way to get started if you do not want to build from source.
+
 ## Build from sources
 
 1. Clone this repository or download the `build.sh` script.
@@ -82,6 +86,10 @@ usb-modeswitch — это инструмент для управления USB-�
 - Устанавливает usb-modeswitch и все необходимые зависимости на macOS
 - Использует Homebrew для управления зависимостями
 - Загружает и собирает последнюю версию usb-modeswitch
+
+## Скачивание заранее скомпилированного приложения
+
+Вы можете скачать готовое приложение в разделе "Releases" на странице проекта GitHub. Это самый простой способ начать работу, если вы не хотите собирать программу из исходников.
 
 ## Сборка из исходников
 
