@@ -13,14 +13,14 @@ usb-modeswitch is a tool for controlling "multi-mode" USB devices, such as 3G/4G
 - Uses Homebrew for dependency management
 - Downloads and builds the latest usb-modeswitch release
 
-## Installation
+## Build from sources
 
-1. Clone this repository or download the `install.sh` script.
+1. Clone this repository or download the `build.sh` script.
 2. Open Terminal and run:
 
 	```sh
-	chmod +x install.sh
-	sudo ./install.sh
+	chmod +x build.sh
+	sudo ./build.sh
 	```
 
 The script will:
@@ -83,14 +83,14 @@ usb-modeswitch — это инструмент для управления USB-�
 - Использует Homebrew для управления зависимостями
 - Загружает и собирает последнюю версию usb-modeswitch
 
-## Установка
+## Сборка из исходников
 
-1. Клонируйте этот репозиторий или скачайте скрипт `install.sh`.
+1. Клонируйте этот репозиторий или скачайте скрипт `build.sh`.
 2. Откройте Терминал и выполните:
 
 	```sh
-	chmod +x install.sh
-	sudo ./install.sh
+	chmod +x build.sh
+	sudo ./build.sh
 	```
 
 Скрипт выполнит:
