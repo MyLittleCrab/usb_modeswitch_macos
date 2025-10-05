@@ -1,3 +1,4 @@
 /usb-modeswitch*/
 /build_with_static_linking/libusb*
 *.log
+.DS_Store

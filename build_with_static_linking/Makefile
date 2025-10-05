@@ -13,7 +13,7 @@ LIBUSB_A_ARM = $(abspath ../build_with_static_linking/libusb/1.0.29/lib/libusb-1
 all-static: $(PROG)-static
 
 $(PROG)-static: $(OBJS) usb_modeswitch.h
-	$(CC) -o $(PROG)-x64 $(OBJS) $(CFLAGS) $(LDFLAGS) $(filter-out -lusb-1.0,$(LIBUSB_STATIC_FLAGS)) $(LIBUSB_A)
+	$(CC) -o $(PROG) $(OBJS) $(CFLAGS) $(LDFLAGS) $(filter-out -lusb-1.0,$(LIBUSB_STATIC_FLAGS)) $(LIBUSB_A)
 
 all-static-arm: $(PROG)-static-arm
 
