@@ -10,11 +10,9 @@ jobs:
   build-macos-x64:
     runs-on: macos-13
     steps:
-      # 1. Клонируем репозиторий
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. Читаем версию
       - name: Read version from file
         id: get_version
         run: |
@@ -22,7 +20,6 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "Detected version: $VERSION"
 
-      # 3. Запускаем ваш скрипт сборки
       - name: Build project
         run: |
           cd build_with_static_linking
@@ -39,7 +36,16 @@ jobs:
           fi
           mv ./usb_modeswitch-current ./usb_modeswitch-arm64
 
-      # 5. Создаём релиз и загружаем файлы
+      - name: Create Git Tag
+        run: |
+          VERSION="${{ steps.get_version.outputs.version }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag $VERSION
+          git push origin $VERSION
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Create Release and Upload Artifacts
         uses: softprops/action-gh-release@v1
         with:
