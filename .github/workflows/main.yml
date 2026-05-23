@@ -7,7 +7,7 @@ on:
   workflow_dispatch: 
 
 jobs:
-  build-macos-x64:
+  build-macos:
     runs-on: macos-latest
     steps:
       - name: Checkout code
@@ -20,12 +20,19 @@ jobs:
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "Detected version: $VERSION"
 
-      - name: Build project
+      - name: Build arm
         run: |
           cd build_with_static_linking
           chmod +x ./build_for_current_platform.sh
-          ./build_for_x64_on_arm.sh
+          ./build_for_current_platform.sh
+
+      - name: Build x64
+        run: |
+          cd build_with_static_linking
           chmod +x ./build_for_x64_on_arm.sh
+          ./build_for_x64_on_arm.sh
+          
+
 
       - name: Verify build artifacts
         run: |
