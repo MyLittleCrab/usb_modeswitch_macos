@@ -10,7 +10,20 @@ if ! command -v brew >/dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 fi; 
 
-brew install libusb pkg-config; 
+brew install pkg-config; 
+
+#if directory libusb exists, no need to fetch and extract
+if ! [ -d "./libusb" ]; then
+    echo "libusb directory does not exist. Fetching and extracting libusb for x64 architecture..."
+    find $(brew --cache) -name "libusb-*-64*" -delete
+    brew fetch --force --arch=intel libusb
+    cp $(brew --cache)/libusb-* .
+
+    tar -xvf libusb-*
+
+else
+    echo "libusb directory already exists. Skipping fetch and extract."
+fi
 
 if ! [ -d "../usb-modeswitch-${modeswitchversion}" ]; then
     echo "usb-modeswitch-${modeswitchversion} directory does not exist. Fetching and extracting usb-modeswitch-${modeswitchversion}"
@@ -26,7 +39,7 @@ fi
 cp ./Makefile ../"usb-modeswitch-${modeswitchversion}"/Makefile
 cd ../"usb-modeswitch-${modeswitchversion}"
 
-make all-static 1> install.log 2>&1 || { echo "Check install_arm.log for details of building."; exit 1; }
-echo "usb-modeswitch building for current platform complete. Check your usb-modeswitch-${modeswitchversion} folder."
+make all-static-x64 1> install_x64.log 2>&1 || { echo "Check install_arm.log for details of building."; exit 1; }
+echo "usb-modeswitch building for x64 complete. Check your usb-modeswitch-${modeswitchversion} folder."
 
-cp ./usb_modeswitch-current ../
+cp ./usb_modeswitch-x64 ../

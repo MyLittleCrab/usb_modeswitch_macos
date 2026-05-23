@@ -27,16 +27,17 @@ jobs:
         run: |
           cd build_with_static_linking
           chmod +x ./build_for_current_platform.sh
-          ./build_for_arm_on_x64.sh
-          chmod +x ./build_for_arm_on_x64.sh
+          ./build_for_x64_on_arm.sh
+          chmod +x ./build_for_x64_on_arm.sh
 
       - name: Verify build artifacts
         run: |
           ls -la
-          if [ ! -f "./usb_modeswitch-x64" ] || [ ! -f "./usb_modeswitch-arm64" ]; then
-            echo "ERROR: usb_modeswitch-x64 or usb_modeswitch-arm64 files not found!"
+          if [ ! -f "./usb_modeswitch-x64" ] || [ ! -f "./usb_modeswitch-current" ]; then
+            echo "ERROR: usb_modeswitch-x64 or usb_modeswitch-current files not found!"
             exit 1
           fi
+          mv ./usb_modeswitch-current ./usb_modeswitch-arm64
 
       # 5. Создаём релиз и загружаем файлы
       - name: Create Release and Upload Artifacts

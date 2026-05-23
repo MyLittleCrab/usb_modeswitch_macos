@@ -10,12 +10,14 @@ if ! command -v brew >/dev/null 2>&1; then
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)";
 fi; 
 
+brew install pkg-config; 
+
 #if directory libusb exists, no need to fetch and extract
 if ! [ -d "./libusb" ]; then
     echo "libusb directory does not exist. Fetching and extracting libusb for ARM architecture..."
     find $(brew --cache) -name "libusb-*-arm64*" -delete
     brew fetch --force --arch=arm libusb
-    cp $(brew --cache)/libusb-*
+    cp $(brew --cache)/libusb-* .
 
     tar -xvf libusb-*
 
