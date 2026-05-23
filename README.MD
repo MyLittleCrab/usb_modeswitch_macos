@@ -17,6 +17,8 @@ usb-modeswitch is a tool for controlling "multi-mode" USB devices, such as 3G/4G
 
 You can download a ready-to-use precompiled application from the "Releases" section on the project's GitHub page. This is the easiest way to get started if you do not want to build from source.
 
+Last build Status: [![Build and Release](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml/badge.svg)](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml)
+
 ## Build from sources
 
 1. Clone this repository or download the `build.sh` script.
@@ -90,6 +92,8 @@ usb-modeswitch — это инструмент для управления USB-�
 ## Скачивание заранее скомпилированного приложения
 
 Вы можете скачать готовое приложение в разделе "Releases" на странице проекта GitHub. Это самый простой способ начать работу, если вы не хотите собирать программу из исходников.
+
+Last build Status: [![Build and Release](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml/badge.svg)](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml)
 
 ## Сборка из исходников
 
