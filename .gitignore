@@ -3,4 +3,5 @@
 *.log
 .DS_Store
 /usb_modeswitch-x64
+/usb_modeswitch-current
 /usb_modeswitch-arm64

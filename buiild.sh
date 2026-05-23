@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 # Script to install usb-modeswitch on macOS
 
+modeswitchversion=$(cat ../modeswitchversion.txt)
+
 # Check for Homebrew and install if not present
 if ! command -v brew >/dev/null 2>&1; then
     echo "Homebrew not found. Installing...";
@@ -10,17 +12,13 @@ fi;
 # Install dependencies
 brew install libusb pkg-config; 
 
-cd ~;
-
 # Download and install usb-modeswitch
 # Link can be changed to the latest version from https://www.draisberghof.de/usb_modeswitch/
-curl -LO https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-2.6.0.tar.bz2;
-tar -xjf usb-modeswitch-2.6.0.tar.bz2;
+curl -LO "https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-${modeswitchversion}.tar.bz2"
+tar -xjf "usb-modeswitch-${modeswitchversion}.tar.bz2"
+rm -rf ./"usb-modeswitch-${modeswitchversion}.tar.bz2"
 
-# Clean up
-rm -rf ./usb-modeswitch-2.6.0.tar.bz2;
-
-cd usb-modeswitch-2.6.0;
+cd ./"usb-modeswitch-${modeswitchversion}"
 
 echo "All dependencies installed.";
 
