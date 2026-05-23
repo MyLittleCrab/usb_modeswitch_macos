@@ -2,3 +2,5 @@
 /build_with_static_linking/libusb*
 *.log
 .DS_Store
+/usb_modeswitch-x64
+/usb_modeswitch-arm64
