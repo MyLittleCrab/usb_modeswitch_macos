@@ -72,7 +72,12 @@ You can use more friendly app (but with less functionality)
 
 This project is not affiliated with the original usb-modeswitch authors. See their site for licensing details.
 
+This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the GNU General Public License for more details:
+https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 ---
 
 # usb-modeswitch-macos (на русском)
@@ -93,7 +98,7 @@ usb-modeswitch — это инструмент для управления USB-�
 
 Вы можете скачать готовое приложение в разделе "Releases" на странице проекта GitHub. Это самый простой способ начать работу, если вы не хотите собирать программу из исходников.
 
-Last build Status: [![Build and Release](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml/badge.svg)](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml)
+Статус последней сборки: [![Build and Release](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml/badge.svg)](https://github.com/MyLittleCrab/usb_modeswitch_macos/actions/workflows/main.yml)
 
 ## Сборка из исходников
 
@@ -148,3 +153,9 @@ sudo ./usb_modeswitch -c ./UgreenAdapterConfig
 
 Этот проект не аффилирован с оригинальными авторами usb-modeswitch. Подробности о лицензии смотрите на их сайте.
 
+Эта программа является свободным программным обеспечением; вы можете распространять ее и/или модифицировать в соответствии с условиями GNU General Public License, опубликованными Фондом свободного программного обеспечения (Free Software Foundation); либо в версии 2 Лицензии, либо (по вашему выбору) в любой более поздней версии.
+
+Эта программа распространяется в надежде, что она будет полезной, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ ЦЕННОСТИ или пригодности для ОПРЕДЕЛЕННОЙ ЦЕЛИ.
+
+Более подробную информацию смотрите в разделе GNU General Public License.:
+https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
