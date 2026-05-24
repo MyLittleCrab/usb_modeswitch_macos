@@ -17,7 +17,6 @@ if ! [ -d "../usb-modeswitch-${modeswitchversion}" ]; then
     cd ..
     curl -LO "https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-${modeswitchversion}.tar.bz2"
     tar -xjf "usb-modeswitch-${modeswitchversion}.tar.bz2"
-    rm -rf ./"usb-modeswitch-${modeswitchversion}.tar.bz2";
     cd ./build_with_static_linking
 else
     echo "usb-modeswitch-${modeswitchversion} directory already exists. Skipping fetch and extract."

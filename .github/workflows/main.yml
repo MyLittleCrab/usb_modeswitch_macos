@@ -17,7 +17,7 @@ jobs:
         id: get_version
         run: |
           VERSION="$(cat modeswitchversion.txt | tr -d '\n\r')"
-          UMSPATH="./usb-modeswitch-${VERSION}.tar.bz2"
+          UMSPATH="usb-modeswitch-${VERSION}.tar.bz2"
           echo "version=$VERSION" >> $GITHUB_OUTPUT
           echo "umspath=$UMSPATH" >> $GITHUB_OUTPUT
           echo "Detected version: $VERSION"
@@ -33,8 +33,6 @@ jobs:
           cd build_with_static_linking
           chmod +x ./build_for_x64_on_arm.sh
           ./build_for_x64_on_arm.sh
-          
-
 
       - name: Verify build artifacts
         run: |
@@ -44,6 +42,10 @@ jobs:
             exit 1
           fi
           mv ./usb_modeswitch-current ./usb_modeswitch-arm64
+
+      - name: Rename Sources Archive
+        run: |
+          mv ./${{ steps.get_version.outputs.umspath }} ./sources-of-${{ steps.get_version.outputs.umspath }}
 
       - name: Create Git Tag
         run: |
@@ -66,6 +68,6 @@ jobs:
           files: |
             ./usb_modeswitch-x64
             ./usb_modeswitch-arm64
-            ${{ steps.get_version.outputs.umspath }}
+            ./sources-of-${{ steps.get_version.outputs.umspath }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

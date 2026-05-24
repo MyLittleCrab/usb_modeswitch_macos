@@ -1,17 +1,17 @@
 
 # usb-modeswitch-macos
 
-Easily install [usb-modeswitch](https://www.draisberghof.de/usb_modeswitch/) on macOS using a simple script.
+Easily install [USB ModeSwitch](https://www.draisberghof.de/usb_modeswitch/) on macOS using a simple script.
 
-## What is usb-modeswitch?
+## What is USB ModeSwitch?
 
-usb-modeswitch is a tool for controlling "multi-mode" USB devices, such as 3G/4G modems or Wi-Fi adapters, that present themselves as a storage device before switching to modem mode. This script automates the installation process for macOS users.
+USB ModeSwitch is a tool for controlling "multi-mode" USB devices, such as 3G/4G modems or Wi-Fi adapters, that present themselves as a storage device before switching to modem mode. This script automates the installation process for macOS users.
 
 ## Features
 
-- Installs usb-modeswitch and its dependencies on macOS
+- Installs USB ModeSwitch and its dependencies on macOS
 - Uses Homebrew for dependency management
-- Downloads and builds the latest usb-modeswitch release
+- Downloads and builds the latest USB ModeSwitch release
 
 ## Download precompiled application
 
@@ -32,11 +32,11 @@ Last build Status: [![Build and Release](https://github.com/MyLittleCrab/usb_mod
 The script will:
 - Check for Homebrew and install it if missing
 - Install `libusb` and `pkg-config`
-- Download and install usb-modeswitch
+- Download and install USB ModeSwitch
 
 ## Usage
 
-After installation, you can use `usb_modeswitch` from the command line. For device configuration, see the [usb-modeswitch documentation](https://www.draisberghof.de/usb_modeswitch/).
+After installation, you can use `usb_modeswitch` from the command line. For device configuration, see the [USB ModeSwitch documentation](https://www.draisberghof.de/usb_modeswitch/).
 
 To add or update device configurations, download the latest config data from:
 
@@ -65,12 +65,12 @@ You can use more friendly app (but with less functionality)
 
 ## Links
 
-- [usb-modeswitch homepage](https://www.draisberghof.de/usb_modeswitch/)
-- [usb-modeswitch-data](https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20191128.tar.bz2)
+- [USB ModeSwitch homepage](https://www.draisberghof.de/usb_modeswitch/)
+- [USB ModeSwitch-data](https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20191128.tar.bz2)
 
 ## License
 
-This project is not affiliated with the original usb-modeswitch authors. See their site for licensing details.
+This project is not affiliated with the original USB ModeSwitch authors. See their site for licensing details.
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
 
@@ -82,17 +82,17 @@ See the GNU General Public License for more details: https://www.gnu.org/license
 
 # usb-modeswitch-macos (на русском)
 
-Простой способ установить [usb-modeswitch](https://www.draisberghof.de/usb_modeswitch/) на macOS с помощью скрипта.
+Простой способ установить [USB ModeSwitch](https://www.draisberghof.de/usb_modeswitch/) на macOS с помощью скрипта.
 
-## Что такое usb-modeswitch?
+## Что такое USB ModeSwitch?
 
-usb-modeswitch — это инструмент для управления USB-устройствами с несколькими режимами работы, такими как 3G/4G модемы или Wi-Fi адаптеры, которые сначала определяются как накопитель, а затем могут переключаться в режим модема. Этот скрипт автоматизирует процесс установки для пользователей macOS.
+USB ModeSwitch — это инструмент для управления USB-устройствами с несколькими режимами работы, такими как 3G/4G модемы или Wi-Fi адаптеры, которые сначала определяются как накопитель, а затем могут переключаться в режим модема. Этот скрипт автоматизирует процесс установки для пользователей macOS.
 
 ## Возможности
 
-- Устанавливает usb-modeswitch и все необходимые зависимости на macOS
+- Устанавливает USB ModeSwitch и все необходимые зависимости на macOS
 - Использует Homebrew для управления зависимостями
-- Загружает и собирает последнюю версию usb-modeswitch
+- Загружает и собирает последнюю версию USB ModeSwitch
 
 ## Скачивание заранее скомпилированного приложения
 
@@ -113,15 +113,15 @@ usb-modeswitch — это инструмент для управления USB-�
 Скрипт выполнит:
 - Проверку наличия Homebrew и установку при необходимости
 - Установку `libusb` и `pkg-config`
-- Загрузку и установку usb-modeswitch
+- Загрузку и установку USB ModeSwitch
 
 ## Использование
 
-После установки вы можете использовать `usb_modeswitch` из командной строки. Для настройки устройств смотрите [документацию usb-modeswitch](https://www.draisberghof.de/usb_modeswitch/).
+После установки вы можете использовать `usb_modeswitch` из командной строки. Для настройки устройств смотрите [документацию USB ModeSwitch](https://www.draisberghof.de/usb_modeswitch/).
 
 Чтобы добавить или обновить конфигурации устройств, скачайте последние данные конфигураций по ссылке:
 
-- [usb-modeswitch-data](https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20191128.tar.bz2)
+- [USB ModeSwitch-data](https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20191128.tar.bz2)
 
 ## Пример
 
@@ -146,12 +146,12 @@ sudo ./usb_modeswitch -c ./UgreenAdapterConfig
 
 ## Ссылки
 
-- [usb-modeswitch homepage](https://www.draisberghof.de/usb_modeswitch/)
-- [usb-modeswitch-data](https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20191128.tar.bz2)
+- [USB ModeSwitch homepage](https://www.draisberghof.de/usb_modeswitch/)
+- [USB ModeSwitch-data](https://www.draisberghof.de/usb_modeswitch/usb-modeswitch-data-20191128.tar.bz2)
 
 ## Лицензия
 
-Этот проект не аффилирован с оригинальными авторами usb-modeswitch. Подробности о лицензии смотрите на их сайте.
+Этот проект не аффилирован с оригинальными авторами USB ModeSwitch. Подробности о лицензии смотрите на их сайте.
 
 Эта программа является свободным программным обеспечением; вы можете распространять ее и/или модифицировать в соответствии с условиями GNU General Public License, опубликованными Фондом свободного программного обеспечения (Free Software Foundation); либо в версии 2 Лицензии, либо (по вашему выбору) в любой более поздней версии.
 
