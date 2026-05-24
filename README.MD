@@ -76,8 +76,8 @@ This program is free software; you can redistribute it and/or modify it under th
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-See the GNU General Public License for more details:
-https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+See the GNU General Public License for more details: https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+
 ---
 
 # usb-modeswitch-macos (на русском)
@@ -157,5 +157,4 @@ sudo ./usb_modeswitch -c ./UgreenAdapterConfig
 
 Эта программа распространяется в надежде, что она будет полезной, но БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ; даже без подразумеваемых гарантий КОММЕРЧЕСКОЙ ЦЕННОСТИ или пригодности для ОПРЕДЕЛЕННОЙ ЦЕЛИ.
 
-Более подробную информацию смотрите в разделе GNU General Public License.:
-https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
+Более подробную информацию смотрите в разделе GNU General Public License.: https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
